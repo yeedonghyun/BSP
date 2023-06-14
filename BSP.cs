@@ -42,10 +42,6 @@ public class Program
         BSP(root, ref random);
 
         PrintLastChildren(root);
-        if (isStable(root)) //쌓인 구조물이 안정적인가를 테스트
-        {
-
-        }
     }
 
     public static void BSP(Node _node, ref Random _random)
@@ -164,17 +160,6 @@ public class Program
 
         _node.Children.Add(new Node(leftY, rightY, _node.leftBottom, _node.rightBottom));
         _node.Children.Add(new Node(_node.leftTop, _node.rightTop, leftY, rightY));
-    }
-
-    public static void BlockPlacement(Node _node) //블럭 배치
-    {
-
-    }
-
-    public static bool isStable(Node _node) //블럭이 무너지지 않는가 테스트
-    {
-
-        return true;
     }
 }
 
