@@ -62,11 +62,7 @@ public class Program
         {
             HeightPatitioning(ref _node, ref _random);
         }
-        else
-        {
-            BlockPlacement(_node);
-        }
-
+        
         foreach (var child in _node.Children)
         {
             BSP(child, ref _random);
